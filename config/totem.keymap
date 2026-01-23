@@ -153,7 +153,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp AT         &kp LT    &kp EQUAL  &kp GT     &kp PRCNT        &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &kp DQT
+           &kp AT         &kp LT    &kp EQUAL  &kp GT     &kp COMMA        &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &kp DQT
            &kp BACKSLASH  &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS         &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL
 &kp GRAVE  &kp HASH       &kp STAR  &kp COLON  &kp SLASH  &kp PERIOD       &kp DQT    &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &kp QMARK
                                     &kp ESC    &mo 4      &kp BACKSPACE    &trans     &trans    &kp DEL
