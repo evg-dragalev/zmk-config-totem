@@ -27,7 +27,7 @@
         init-delay-ms = <50>;
     };
 
-    kscan0: kscan {
+    kscan0: kscan_0 {
         wakeup-source;
     };
 
