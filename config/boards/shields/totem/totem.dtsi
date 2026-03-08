@@ -30,5 +30,6 @@
     kscan0: kscan_0 {
         label = "KSCAN";
         diode-direction = "col2row";
+        wakeup-source;
     };
 };
