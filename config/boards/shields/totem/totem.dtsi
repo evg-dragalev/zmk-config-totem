@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+    	zmk,battery = &xiao_battery_voltage_divider;
     };
 
     default_transform: keymap_transform_0 {
@@ -34,5 +35,15 @@
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+    };
+
+    xiao_battery_voltage_divider: vbatt {
+    	status = "okay";
+    	compatible = "zmk,battery-voltage-divider";
+    	label = "XIAO voltage divider";
+    	io-channels = <&adc 7>;
+    	output-ohms = <510000>;
+    	full-ohms =  <1510000>;
+    	power-gpios = <&gpio0 14 (GPIO_ACTIVE_LOW)>;
     };
 };
